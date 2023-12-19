@@ -143,7 +143,7 @@ ul {
 #projectBollywoodText {
     grid-row: row8/row9;
     grid-column: line2/line5;
-    margin-left: 370px;
+    margin-left: 270px;
     margin-top: 40px;
     align-self: start;
 }
@@ -156,7 +156,7 @@ ul {
 #projectDatabaseText {
     grid-row: row9/row10;
     grid-column: line2/line5;
-    margin-left: 370px;
+    margin-left: 270px;
     margin-top: 40px;
     align-self: start;
 }
@@ -169,7 +169,7 @@ ul {
 #projectIntramuralsText {
     grid-row: row10/row11;
     grid-column: line2/line5;
-    margin-left: 370px;
+    margin-left: 270px;
     margin-top: 40px;
     align-self: start;
 }
@@ -182,7 +182,7 @@ ul {
 #projectAriText {
     grid-row: row11/row12;
     grid-column: line2/line5;
-    margin-left: 370px;
+    margin-left: 270px;
     margin-top: 40px;
     align-self: start;
 }
