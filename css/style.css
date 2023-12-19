@@ -27,6 +27,7 @@ p {
     font-size: 18px;
     font-weight: 500;
     margin-bottom: 0px;
+    margin-top: 5px;
 }
 ul {
     font-family: Jost;
@@ -121,11 +122,12 @@ ul {
 #projectImg {
     grid-column: line2/line5;
     align-self: start;
-    margin-top: 30px;
+    margin-top: 50px;
 }
 #projectText {
     grid-column: line2/line5;
     margin-left: 370px;
+    margin-top: 40px;
     align-self: start; 
 }
 .projectBollywoodText {
