@@ -1,7 +1,13 @@
+/* .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+} */
 h1 {
     font-family: Jost;
     font-size: 40px;
     align-self: end;
+    text-align: center;
 }
 h2 {
     font-family: Jost;
@@ -45,21 +51,33 @@ ul {
 .container {
     display: grid;
     grid-template-columns: [line1] 1fr [line2] 3fr [line3] 20px [line4] 3fr [line5] 1fr [line6];
-    grid-template-rows: [row1] 100px [row2] 30px [row3] 50px [row4] 210px [row5] 50px [row6] 100px [row7] 300px [row8] auto [row9] auto [row10] auto [row11] auto [row12] auto [row13] auto [row14] auto[row15];
+    grid-template-rows: [row1] 60px [row2] 120px [row3] 210px [row4] 50px [row5] 100px [row6] 300px [row7] auto [row8] auto [row9] auto [row10] auto [row11] auto [row12] auto [row13] auto[row14];
   }
-.header {
+#navAbout {
     grid-column: line1/line6;
     grid-row: row1/row2;
-    justify-self: center;
+}
+#navEducation {
+    grid-column: line1/line6;
+    grid-row: row3/row4;
+    margin-top: 80px;
+}
+#navProjects {
+    grid-column: line1/line6;
+    grid-row: row6/row7;
+    margin-top: 170px;
+}
+.header {
+    position: sticky;
+    top: 0;
+    grid-column: line1/line6;
+    grid-row: row1/row2;
+    justify-self: stretch;
     align-self: end;
+    background-color: white;
 }
 .menu {
     font-family: Jost;
-    grid-column: line1/line6;
-    grid-row: row2/row3;
-    justify-self: center;
-    align-self: center;
-    background-color: rgb(211, 239, 249);
     width: 100%;
 }
 .menu a {
@@ -69,95 +87,112 @@ ul {
     width: 20%;
     color: black;
     text-decoration: none;
+    background-color: rgb(211, 239, 249);
 }
 
 .menu a:hover {
     background-color: lightblue;
 }
-.about {
+#about {
     grid-column: line2/line5;
-    grid-row: row3/row4;
-    align-self: end;   
+    grid-row: row2/row3;
+    align-self: end; 
 }
-.aboutImage {
+#aboutImage {
     grid-column: line2/line3;
-    grid-row: row4/row5;
+    grid-row: row3/row4;
     align-self: center;
 }
-.aboutText {
+#aboutText {
     margin-left: 210px;
     grid-column: line2/line5;
+    grid-row: row3/row4;
+    align-self: center;
+}
+#education {
+    grid-column: line2/line5;
     grid-row: row4/row5;
 }
-.education {
-    /* margin-left: 10%;
-    margin-right: 10%; */
-    grid-column: line2/line5;
-    grid-row: row5/row6;
-}
-.educationImage {
+#educationImage {
     align-self: center;
     grid-column: line2/line3;
-    grid-row: row6/row7;   
+    grid-row: row5/row6; 
 }
-.educationSchool {
+#educationSchool {
     align-self: center;
     margin-left: 50px;
     margin-top: 10px;
     grid-column: line2/line5;
-    grid-row: row6/row7;   
+    grid-row: row5/row6; 
 }
-.educationText {
+#educationText {
     grid-column: line2/line5;
-    grid-row: row7/row8; 
+    grid-row: row6/row7; 
     align-self:center;
 }
-.projects {
+#projects {
     grid-column: line2/line5;
+    grid-row: row7/row8;
+}
+#projectBollywoodImage {
     grid-row: row8/row9;
-}
-.projectBollywoodImage {
-    grid-row: row9/row10;
-}
-#projectImg {
     grid-column: line2/line5;
     align-self: start;
     margin-top: 50px;
 }
-#projectText {
+#projectBollywoodText {
+    grid-row: row8/row9;
     grid-column: line2/line5;
     margin-left: 370px;
     margin-top: 40px;
-    align-self: start; 
+    align-self: start;
 }
-.projectBollywoodText {
+#projectDatabaseImage {
     grid-row: row9/row10;
-}
-.projectDatabaseImage {
-    grid-row: row10/row11;
-}
-.projectDatabaseText {
-    grid-row: row10/row11;
-}
-.projectIntramuralsImage {
-    grid-row: row11/row12;
-}
-.projectIntramuralsText {
-    grid-row: row11/row12;
-}
-.projectAriImage {
-    grid-row: row12/row13;
-}
-.projectAriText {
-    grid-row: row12/row13;
-}
-.experience {
     grid-column: line2/line5;
-    grid-row: row13/row14;
+    align-self: start;
+    margin-top: 50px;
 }
-.contact {
+#projectDatabaseText {
+    grid-row: row9/row10;
+    grid-column: line2/line5;
+    margin-left: 370px;
+    margin-top: 40px;
+    align-self: start;
+}
+#projectIntramuralsImage {
+    grid-row: row10/row11;
+    grid-column: line2/line5;
+    align-self: start;
+    margin-top: 50px;
+}
+#projectIntramuralsText {
+    grid-row: row10/row11;
+    grid-column: line2/line5;
+    margin-left: 370px;
+    margin-top: 40px;
+    align-self: start;
+}
+#projectAriImage {
+    grid-row: row11/row12;
+    grid-column: line2/line5;
+    align-self: start;
+    margin-top: 50px;
+}
+#projectAriText {
+    grid-row: row11/row12;
+    grid-column: line2/line5;
+    margin-left: 370px;
+    margin-top: 40px;
+    align-self: start;
+}
+#experience {
+    grid-column: line2/line5;
+    grid-row: row12/row13;
+}
+#contact {
     font-family: Jost;
     grid-column: line2/line5;
-    grid-row: row14/row15;
+    grid-row: row13/row14;
     justify-self: center;
 }
